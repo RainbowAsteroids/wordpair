@@ -11,8 +11,8 @@ class SavedWordList extends StatelessWidget {
       if (index.isOdd) {
         const margin = 45.0;
         return Container(
-            margin: EdgeInsets.only(left: margin, right: margin),
-            child: Divider());
+            margin: const EdgeInsets.only(left: margin, right: margin),
+            child: const Divider());
       }
 
       final listIndex = index ~/ 2;
@@ -41,7 +41,7 @@ class SavedWordList extends StatelessWidget {
       appBar: AppBar(
         title: Container(
           // margin: EdgeInsets.only(left: appBarMargin),
-          child: Text("Saved Word Pairs")
+          child: const Text("Saved Word Pairs")
         ),
         leadingWidth: 128,
       ),

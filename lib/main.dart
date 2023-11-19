@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -60,8 +59,8 @@ class _WordPairAppState extends State<WordPairApp> {
               fontWeight: FontWeight.w500,
             ),
           ),
-          colorScheme: ColorScheme.dark(),
-          iconTheme: IconThemeData(size: 48),
+          colorScheme: const ColorScheme.dark(),
+          iconTheme: const IconThemeData(size: 48),
       ),
       home: WordPairExplorer(
         savedWordPairs: _savedWordPairs, 

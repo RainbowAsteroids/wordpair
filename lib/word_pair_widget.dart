@@ -25,7 +25,7 @@ class WordPairWidget extends StatelessWidget {
           bottom: verticalPadding,
         ),
         title: Text(
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 38,
             ),
             wordPair),

@@ -16,15 +16,15 @@ class WordPairExplorer extends StatefulWidget {
 }
 
 class _WordPairExplorerState extends State<WordPairExplorer> {
-  List<String> _wordPairs = generateWordPairs().take(500).map((wp) => wp.asPascalCase).toList();
+  final List<String> _wordPairs = generateWordPairs().take(500).map((wp) => wp.asPascalCase).toList();
 
   Widget _buildList() {
     return ListView.builder(itemBuilder: (buildContext, index) {
       if (index.isOdd) {
         const margin = 45.0;
         return Container(
-            margin: EdgeInsets.only(left: margin, right: margin),
-            child: Divider());
+            margin: const EdgeInsets.only(left: margin, right: margin),
+            child: const Divider());
       }
 
       final listIndex = index ~/ 2;
@@ -49,11 +49,11 @@ class _WordPairExplorerState extends State<WordPairExplorer> {
     return Scaffold(
       appBar: AppBar(
         title: Container(
-            margin: EdgeInsets.only(left: appBarMargin),
-            child: Text("Word Pair Explorer")),
+            margin: const EdgeInsets.only(left: appBarMargin),
+            child: const Text("Word Pair Explorer")),
         actions: [
           Container(
-            margin: EdgeInsets.only(right: appBarMargin),
+            margin: const EdgeInsets.only(right: appBarMargin),
             child: IconButton(
               iconSize: 72,
               onPressed: () { Navigator.push(context, 
@@ -63,7 +63,7 @@ class _WordPairExplorerState extends State<WordPairExplorer> {
                   ))
                 );
               },
-              icon: Icon(Icons.list),
+              icon: const Icon(Icons.list),
             ),
           )
         ],
